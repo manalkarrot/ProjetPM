@@ -1,5 +1,8 @@
 package com.example.projetpm
 
 data class News (
-        val title: String
+        val id: Int,
+        val title: String,
+        val description: String
+
 )
