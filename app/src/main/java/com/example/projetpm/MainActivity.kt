@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
 
-        val dailyNews : News = News("PSG vs OM: Victoire écrasante !!!")
+        //val dailyNews : News = News("PSG vs OM: Victoire écrasante !!!")
 
     }
 
-    
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
