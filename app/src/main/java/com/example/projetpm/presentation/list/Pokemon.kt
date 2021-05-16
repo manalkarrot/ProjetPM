@@ -1,6 +1,7 @@
 package com.example.projetpm.presentation.list
 
 data class Pokemon(
-        val name: String
+        val name: String,
+        val url: String
 
 )

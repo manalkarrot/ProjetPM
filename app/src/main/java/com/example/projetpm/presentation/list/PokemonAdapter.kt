@@ -7,7 +7,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projetpm.R
 
-class PokemonAdapter(private var dataSet: List<Pokemon>) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
+class PokemonAdapter(private var dataSet: List<Pokemon>, var listener: ((Pokemon) -> Unit)? = null) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
+
 
 
     /**
@@ -20,10 +21,11 @@ class PokemonAdapter(private var dataSet: List<Pokemon>) : RecyclerView.Adapter<
         init {
             // Define click listener for the ViewHolder's View.
             textView = view.findViewById(R.id.pokemon_name)
+
         }
     }
 
-    fun updateList(list: ArrayList<Pokemon>){
+    fun updateList(list: List<Pokemon>){
         dataSet = list
         notifyDataSetChanged()
     }
@@ -44,6 +46,9 @@ class PokemonAdapter(private var dataSet: List<Pokemon>) : RecyclerView.Adapter<
 
         val pokemon = dataSet[position]
         viewHolder.textView.text = pokemon.name
+        viewHolder.itemView.setOnClickListener {
+            listener?.invoke(pokemon)
+        }
 
     }
 
