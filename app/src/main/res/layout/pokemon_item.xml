@@ -7,10 +7,10 @@
     android:layout_height="50dp">
 
     <TextView
-        android:id="@+id/videotheque_name"
+        android:id="@+id/pokemon_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="You"
+        tools:text="Pikatchu"
         android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"

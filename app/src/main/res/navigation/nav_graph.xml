@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.projetpm.presentation.list.VideothequeListFragment"
+        android:name="com.example.projetpm.presentation.list.PokemonListFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_videotheque_list">
+        tools:layout="@layout/fragment_pokemon_list">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"

@@ -7,7 +7,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projetpm.R
 
-class VideothequeAdapter(private var dataSet: List<Videotheque>) : RecyclerView.Adapter<VideothequeAdapter.ViewHolder>() {
+class PokemonAdapter(private var dataSet: List<Pokemon>) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
+
 
     /**
      * Provide a reference to the type of views that you are using
@@ -18,11 +19,11 @@ class VideothequeAdapter(private var dataSet: List<Videotheque>) : RecyclerView.
 
         init {
             // Define click listener for the ViewHolder's View.
-            textView = view.findViewById(R.id.videotheque_name)
+            textView = view.findViewById(R.id.pokemon_name)
         }
     }
 
-    fun updateList(list: List<Videotheque>){
+    fun updateList(list: ArrayList<Pokemon>){
         dataSet = list
         notifyDataSetChanged()
     }
@@ -30,7 +31,7 @@ class VideothequeAdapter(private var dataSet: List<Videotheque>) : RecyclerView.
     // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view, which defines the UI of the list item
-        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.videotheque_item, viewGroup, false)
+        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.pokemon_item, viewGroup, false)
 
         return ViewHolder(view)
     }
@@ -40,8 +41,10 @@ class VideothequeAdapter(private var dataSet: List<Videotheque>) : RecyclerView.
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        val videotheque = dataSet[position]
-        viewHolder.textView.text = videotheque.name
+
+        val pokemon = dataSet[position]
+        viewHolder.textView.text = pokemon.name
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)
