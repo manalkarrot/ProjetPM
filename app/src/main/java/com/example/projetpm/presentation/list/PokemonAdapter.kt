@@ -49,10 +49,7 @@ class PokemonAdapter(private var dataSet: List<Pokemon>, var listener: ((Pokemon
         viewHolder.itemView.setOnClickListener {
             listener?.invoke(pokemon)
         }
-
     }
-
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = dataSet.size
-
 }
