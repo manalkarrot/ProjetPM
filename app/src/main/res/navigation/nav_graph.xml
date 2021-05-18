@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/PokemonListFragment"
-        android:name="com.example.projetpm.presentation.list.PokemonListFragment"
+        android:name="com.example.projetpm.presentation.liste.PokemonListFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_pokemon_list">
 
@@ -17,9 +17,9 @@
     </fragment>
     <fragment
         android:id="@+id/PokemonDetailFragment"
-        android:name="com.example.projetpm.SecondFragment"
+        android:name="com.example.projetpm.presentation.detail.PokemonDetailFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_pokemon_detail">
 
         <action
             android:id="@+id/navigateToPokemonListFragment"

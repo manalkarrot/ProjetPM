@@ -1,4 +1,4 @@
-package com.example.projetpm.presentation.list
+package com.example.projetpm.presentation.liste
 
 import android.view.LayoutInflater
 import android.view.View
