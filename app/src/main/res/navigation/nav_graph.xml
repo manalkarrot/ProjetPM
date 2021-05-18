@@ -20,7 +20,10 @@
         android:name="com.example.projetpm.presentation.detail.PokemonDetailFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_pokemon_detail">
-
+        <argument
+            android:name="pokemonId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
         <action
             android:id="@+id/navigateToPokemonListFragment"
             app:destination="@id/PokemonListFragment" />

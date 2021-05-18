@@ -9,7 +9,7 @@ interface PokeApi {
     fun getPokemonList(): Call<PokemonListResponse>
 
     @GET("pokemon/{id}")
-    fun getPokemonDetail(@Path("id") id: String): Call<PokemonDetailResponse>
+    fun getPokemonDetail(@Path("id") id: Int): Call<PokemonDetailResponse>
 }
 
 
