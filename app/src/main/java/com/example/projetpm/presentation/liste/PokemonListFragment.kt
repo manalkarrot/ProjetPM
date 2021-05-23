@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +27,8 @@ class PokemonListFragment : Fragment() {
 
     private val adapter = PokemonAdapter(listOf(), ::onClickedPokemon)
 
+    private val viewModel: PokemonListViewModel by viewModels()
+
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -41,24 +45,11 @@ class PokemonListFragment : Fragment() {
 
         recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
-            recyclerView.adapter = this@PokemonListFragment.adapter
+            adapter = this@PokemonListFragment.adapter
         }
 
-
-
-
-        Singletons.pokeApi.getPokemonList().enqueue(object: Callback<PokemonListResponse> {
-            override fun onFailure(call: Call<PokemonListResponse>, t: Throwable) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onResponse(call: Call<PokemonListResponse>, response: Response<PokemonListResponse>) {
-                if(response.isSuccessful && response.body() != null){
-                    val pokemonResponse = response.body()!!
-                    adapter.updateList(pokemonResponse.results)
-                }
-            }
-
+        viewModel.pokeList.observe(viewLifecycleOwner, Observer {list ->
+            adapter.updateList(list)
         })
 
     }
