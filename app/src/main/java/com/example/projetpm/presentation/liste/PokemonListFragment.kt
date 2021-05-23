@@ -4,7 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
+import android.widget.TextView
 import androidx.core.os.bundleOf
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -24,6 +27,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 class PokemonListFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
+    private lateinit var loader: ProgressBar
+    private lateinit var textViewError: TextView
 
     private val adapter = PokemonAdapter(listOf(), ::onClickedPokemon)
 
@@ -42,14 +47,22 @@ class PokemonListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         recyclerView = view.findViewById(R.id.pokemon_recyclerview)
+        loader = view.findViewById(R.id.pokemon_loader)
+        textViewError = view.findViewById(R.id.pokemon_error)
+
 
         recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = this@PokemonListFragment.adapter
         }
 
-        viewModel.pokeList.observe(viewLifecycleOwner, Observer {list ->
-            adapter.updateList(list)
+        viewModel.pokeList.observe(viewLifecycleOwner, Observer {pokemonModel ->
+            loader.isVisible = pokemonModel is PokemonLoader
+            textViewError.isVisible = pokemonModel is PokemonError
+
+            if(pokemonModel is PokemonSuccess) {
+                adapter.updateList(pokemonModel.pokeList)
+            }
         })
 
     }
