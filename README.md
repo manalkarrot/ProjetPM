@@ -14,6 +14,7 @@ Ainsi, j'ai pu respecter le cahier des charges comme il a été demandé:
 - un écran avec une liste d'éléments (la liste des différents Pokémon ainsi qu'une image du personnage correspondant pour que l'utilisateur puisse avoir une visualisation du pokémon séléctionné): 
 
 ![image](https://user-images.githubusercontent.com/81537315/120069821-2b54e000-c088-11eb-9a89-007d23604fe8.png)
+
 Titre: Affichage de la liste de Pokémons
 
 
@@ -23,6 +24,7 @@ Ici, j'utilise l'API Rest PokeApi comme celle du professeur. Ainsi, lorsque l'on
 
 <img width="562" alt="detail element" src="https://user-images.githubusercontent.com/81537315/120070075-80452600-c089-11eb-8cc6-ed481e244b8e.PNG">
 Titre: Affichage des détails d'un Pokémon
+
 
 J'ai également réalisé l'Appel WebService à l'API Rest ainsi que le stockage de données en cache que vous pourrez voir dans le code.
 
