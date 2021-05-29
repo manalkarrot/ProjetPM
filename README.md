@@ -20,6 +20,8 @@ Ainsi, j'ai pu respecter le cahier des charges comme il a été demandé:
 
 Ici, j'utilise l'API Rest PokeApi comme celle du professeur. Ainsi, lorsque l'on appuie sur l'un des personnages nous obtenons le nom du personnage sur un autre écran comme ci-dessous: 
 
+<img width="562" alt="detail element" src="https://user-images.githubusercontent.com/81537315/120070075-80452600-c089-11eb-8cc6-ed481e244b8e.PNG">
+
 
 
 
