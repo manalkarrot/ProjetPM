@@ -15,7 +15,7 @@ Ainsi, j'ai pu respecter le cahier des charges comme il a été demandé:
 
 ![image](https://user-images.githubusercontent.com/81537315/120069821-2b54e000-c088-11eb-9a89-007d23604fe8.png)
 
-Titre: Affichage de la liste de Pokémons
+Titre: Affichage de la liste de Pokémons.
 
 
 - un écran avec le détail d'un élément (lorsque l'on appuie sur l'un des pokémon, nous sommes dirigés vers un autre écran qui donne des informations sur le Pokemon sélectionné) 
@@ -23,7 +23,7 @@ Titre: Affichage de la liste de Pokémons
 Ici, j'utilise l'API Rest PokeApi comme celle du professeur. Ainsi, lorsque l'on appuie sur l'un des personnages nous obtenons le nom du personnage sur un autre écran comme ci-dessous: 
 
 <img width="562" alt="detail element" src="https://user-images.githubusercontent.com/81537315/120070075-80452600-c089-11eb-8cc6-ed481e244b8e.PNG">
-Titre: Affichage des détails d'un Pokémon
+Titre: Affichage des détails d'un Pokémon.
 
 
 J'ai également réalisé l'Appel WebService à l'API Rest ainsi que le stockage de données en cache que vous pourrez voir dans le code.
@@ -39,10 +39,10 @@ J'ai ajouté d'autres options:
 - Enfin j'ai également ajouter une option pour les notifications en utilisant Firebase. Cette option pourrait permettre de rappeler à l'utilisateur de faire un tour sur l'application par exemple. 
 
 <img width="952" alt="firebase generer notif" src="https://user-images.githubusercontent.com/81537315/120071065-cac8a180-c08d-11eb-9fe9-8b2ebd0ff257.PNG">
-Titre: Site Firebase: programmation de notifications
+Titre: Site Firebase: programmation de notifications.
 
 <img width="511" alt="test notif" src="https://user-images.githubusercontent.com/81537315/120071200-7245d400-c08e-11eb-8eb5-eb4170e21571.PNG">
-Titre: Notification reçu par l'émulateur (le téléphone) 
+Titre: Notification reçu par l'émulateur (le téléphone). 
 
 
 
