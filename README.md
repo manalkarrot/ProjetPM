@@ -48,6 +48,16 @@ Titre: Notification reçu par l'émulateur (le téléphone).
 
 Dans le terminal d'Android Studio, je peux voir que le transfert de notifications a bien eu lieu : 
 
+<img width="528" alt="message reçu" src="https://user-images.githubusercontent.com/81537315/120071371-4119d380-c08f-11eb-97c7-9f762487bc27.PNG">
+
+
+Ce que ce projet a pu m'apporter: 
+
+Ce projet m'a permis d’acquérir de nouvelles compétences dans un langage que je ne connaissais pas: le Kotlin. Cela m'a permis également de mieux m'organiser puisque c'es la première fois depuis que je suis à l'ESIEA que l'on me donne un projet individuel à faire. De plus, les acquis de ce projet me serviront sans doute dans le futur. 
+
+J'ai vraiment beaucoup aimé de pouvoir créer une application mobile même si elle est très loin d'être parfaite, je voudrais l'améliorer non seulement pour consolider mes connaissances mais aussi pour m'amuser! 
+
+
 
 
 
