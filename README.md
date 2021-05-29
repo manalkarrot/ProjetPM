@@ -41,8 +41,15 @@ J'ai ajouté d'autres options:
 <img width="952" alt="firebase generer notif" src="https://user-images.githubusercontent.com/81537315/120071065-cac8a180-c08d-11eb-9fe9-8b2ebd0ff257.PNG">
 Titre: Site Firebase: programmation de notifications.
 
+J'ai donc généré des notifications avec Firebase puis je vois bien que je l'ai reçoit bien dans l'émulateur comme ci-dessous: 
+
 <img width="511" alt="test notif" src="https://user-images.githubusercontent.com/81537315/120071200-7245d400-c08e-11eb-8eb5-eb4170e21571.PNG">
 Titre: Notification reçu par l'émulateur (le téléphone). 
+
+Dans le terminal d'Android Studio, je peux voir que le transfert de notifications a bien eu lieu : 
+
+
+
 
 
 
