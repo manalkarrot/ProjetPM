@@ -32,6 +32,10 @@ J'ai ajouté d'autres options:
 
 - J'ai également fait du Gitflow puisque qu'au début je voulais utiliser une API Rest sur les personnages d'Harry Potter (je suis une grande fan !!!) mais malheureusement je n'ai pas réussi à afficher mes personnages et je me suis donc décidée de prendre la même API Rest que le professeur a utilisé qui est celle des Pokemons. Ainsi j'ai donc du créer deux branches pour ne pas perdre ce que j'avais fait pour l'API Rest de Harry Potter. 
 
+- Enfin j'ai également ajouter une option pour les notifications en utilisant Firebase. Cette option pourrait permettre de rappeler à l'utilisateur de faire un tour sur l'application par exemple. 
+
+
+
 
 
 
