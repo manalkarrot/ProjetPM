@@ -9,6 +9,12 @@ Ce readme contient les éléments importants de mon projet de programmation mobi
 
 Pour obtenir une meilleure note, je pouvais améliorer le design de l'application, ou encore modifier l'architecture, inclure des notifications...
 
-Ainsi, j'ai pu respecter le cahier des charges comme il a été demandé et j'ai ajouté d'autres options telles: 
+Ainsi, j'ai pu respecter le cahier des charges comme il a été demandé: 
 
-<img width="528" alt="message reçu" src="https://user-images.githubusercontent.com/81537315/120069485-71a93f80-c086-11eb-8163-5f5036e37e09.PNG">
+- un écran avec une liste d'éléments
+
+
+
+
+
+
